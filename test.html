@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .block {
+        background: #000;
+    }
+
+    @media (min-width: 768px){
+        .block {
+            display: flex;
+        }
+    }
+
+    .block-item .nav{
+        background: red;
+    }
+</style>
+<body>
+    <div class="block">
+        <div class="block-item">item 1</div>
+        <div class="block-item"> item 2 </div>
+    </div>
+</body>
+</html>

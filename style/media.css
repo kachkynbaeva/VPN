@@ -1,0 +1,68 @@
+.header-wrapper .nav,
+.header-wrapper .new-btn {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header-wrapper .nav,
+  .header-wrapper .new-btn {
+    display: flex;
+  }
+  .burger {
+    display: none;
+  }
+}
+
+.row {
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.apple .col-4 {
+  position: relative;
+}
+
+.apple {
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .apple {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .apple .col-4::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: gray;
+  }
+
+  .apple .col-4:last-child::after {
+    display: none;
+  }
+}
+
+.button-group {
+  display: flex;
+}
+
+/* img {
+  max-width: 320px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  img {
+    max-width: 700px;
+  }
+} */
